@@ -4,6 +4,6 @@ I used Python library "Click" to make this application.
 
 
 # How to install it
-'''sh
+'''bash
 $ pip install gitpy
 '''
