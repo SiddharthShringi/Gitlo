@@ -9,6 +9,7 @@ def cli():
 
 
 @cli.command()
-@cli.option()
+@click.argument('username')
 def user(username):
-    r = requests.get
+    r = requests.get('https://api.github.com/users/{}'.format(username)).json()
+    print('Name: {}, Repos: {}, Bio: {}'.format(r['name'], r['public_repos'], r['bio']))
