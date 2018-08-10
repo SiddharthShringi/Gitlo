@@ -31,3 +31,13 @@ def calculate_percentage(langs, lang, total_bytes):
 def convert_to_percentage(langs):
     total_bytes = sum(langs.values())
     return {lang: calculate_percentage(langs, lang, total_bytes) for (lang, v) in langs.items()}
+
+
+@cli.command()
+@click.argument('username')
+@click.argument('reponame')
+def languages(username, reponame):
+    r = requests.get('https://api.github.com/repos/{}/{}/languages'.format(username, reponame)).json()
+    change_r = convert_to_percentage(r)
+    for key, value in change_r.items():
+        print('{}: {}%'.format(key, value))
