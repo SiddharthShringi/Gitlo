@@ -3,7 +3,7 @@ A Command Line Interface made in Python. It's simple tool that helps you to acce
 I used Python library ```Click``` to make this application.
 
 
-# How to get it
+# Install Package
 ```bash
  $ pip install gitlo 
 ```
@@ -39,7 +39,7 @@ Song-App
 ThinkStats2
 ```
 
-## Get language percentage in each repository
+## Get language percentage of each repository
 Use the ```gitlo languages <username> <reponame>``` command to get language information in repository.
 ```bash
 $ gitlo languages siddharthshringi Song-App
