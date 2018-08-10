@@ -13,3 +13,11 @@ def cli():
 def user(username):
     r = requests.get('https://api.github.com/users/{}'.format(username)).json()
     print('Name: {}, Repos: {}, Bio: {}'.format(r['name'], r['public_repos'], r['bio']))
+
+
+@cli.command()
+@click.argument('username')
+def repos(username):
+    r = requests.get('https://api.github.com/users/{}/repos'.format(username)).json()
+    for i in range(len(r)):
+        print(r[i]['name'])
