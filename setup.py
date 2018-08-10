@@ -2,7 +2,7 @@ from setuptools import setup
 import setuptools
 
 setup(
-    name='pygit',
+    name='gitlo',
     version='1.0',
     url="https://github.com/SiddharthShringi/Gitpy",
     author="Siddharth Shringi",
@@ -10,13 +10,13 @@ setup(
     description="A Command Line Interface for accessing Github api.",
     long_description=open('README.md').read(),
     packages=setuptools.find_packages(),
-    py_modules=['pygit'],
+    py_modules=['gitlo'],
     install_requires=[
         'Click', 'Requests',
     ],
     entry_points='''
         [console_scripts]
-        pygit=pygit:cli
+        gitlo=gitlo:cli
     ''',
     classifiers=(
         "Programming Language :: Python :: 3",
