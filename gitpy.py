@@ -21,3 +21,13 @@ def repos(username):
     r = requests.get('https://api.github.com/users/{}/repos'.format(username)).json()
     for i in range(len(r)):
         print(r[i]['name'])
+
+
+def calculate_percentage(langs, lang, total_bytes):
+    result = langs[lang] * 100 / total_bytes
+    return round(result, 2)
+
+
+def convert_to_percentage(langs):
+    total_bytes = sum(langs.values())
+    return {lang: calculate_percentage(langs, lang, total_bytes) for (lang, v) in langs.items()}
