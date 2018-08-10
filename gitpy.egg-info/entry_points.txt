@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gitpy=gitpy:cli
+    

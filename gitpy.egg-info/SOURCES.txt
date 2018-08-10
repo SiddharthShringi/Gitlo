@@ -1,0 +1,7 @@
+gitpy.py
+gitpy.egg-info/PKG-INFO
+gitpy.egg-info/SOURCES.txt
+gitpy.egg-info/dependency_links.txt
+gitpy.egg-info/entry_points.txt
+gitpy.egg-info/requires.txt
+gitpy.egg-info/top_level.txt
