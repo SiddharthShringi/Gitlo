@@ -4,7 +4,17 @@ import click
 
 @click.group()
 def cli():
-    """ Main function in which all subcommand will be nested"""
+    """Command Line tool to access Github API.
+
+    Know user info--> gitlo user <username>
+
+    get repository-list by user--> gitlo repos <username>
+       
+    
+    \b
+    get language percentage of particular repository-->
+    gitlo languages <username> <reponame> 
+    """
     pass
 
 
