@@ -3,7 +3,7 @@ import setuptools
 
 setup(
     name='gitlo',
-    version='1.0',
+    version='1.0.1',
     url="https://github.com/SiddharthShringi/Gitpy",
     author="Siddharth Shringi",
     author_email="siddharthshrigi@gmail.com",

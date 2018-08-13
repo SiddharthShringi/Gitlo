@@ -9,8 +9,8 @@ def cli():
     Know user info--> gitlo user <username>
 
     get repository-list by user--> gitlo repos <username>
-       
-    
+
+
     \b
     get language percentage of particular repository-->
     gitlo languages <username> <reponame> 
