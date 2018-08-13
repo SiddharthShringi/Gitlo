@@ -8,7 +8,7 @@ setup(
     author="Siddharth Shringi",
     author_email="siddharthshrigi@gmail.com",
     description="A Command Line Interface for accessing Github api.",
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     packages=setuptools.find_packages(),
     py_modules=['gitlo'],
     install_requires=[
