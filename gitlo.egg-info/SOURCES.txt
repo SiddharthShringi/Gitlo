@@ -1,4 +1,4 @@
-README.md
+README.rst
 gitlo.py
 setup.py
 gitlo.egg-info/PKG-INFO
