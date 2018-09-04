@@ -25,6 +25,7 @@ def user(username):
     name = r['name']
     repos = r['public_repos']
     bio = r['bio']
+    # print(f'Name: {name}, Repos: {repos}, Bio: {bio}')
     print('Name: {}, Repos: {}, Bio: {}'.format(name, repos, bio))
 
 
